@@ -27,34 +27,31 @@ print('Variance-Covariance Matrix')
 print(cov_matrix)
 print('\n')
 
-# Plot the covariance matrix
-fig, ax = plt.subplots()
-plotting.plot_covariance(cov_matrix, ax=ax)
-plt.savefig('/home/qian/Documents/cbus_case_study/Resources/Images/covariance_matrix.png')
-
 # Create an EfficientFrontier instance
-ef = EfficientFrontier(expected_returns=mu, cov_matrix=cov_matrix, weight_bounds=(0, 1))
+ef = EfficientFrontier(expected_returns=mu, cov_matrix=cov_matrix, weight_bounds=(-1, 1))
 ef.max_sharpe()
 
 # Show the portfolio performance
 ef.portfolio_performance(verbose=True)
 
 # Create a new Efficient Frontier instance for plotting
-ef_plot = EfficientFrontier(expected_returns=mu, cov_matrix=cov_matrix, weight_bounds=(0, 1))
+ef_plot = EfficientFrontier(expected_returns=mu, cov_matrix=cov_matrix, weight_bounds=(-1, 1))
 
 # Get the weights for plotting
 weights_plot = ef_plot.max_sharpe()
+print(weights_plot)
+print('WEIGHTPLOT')
 
-# Output weight plot
+# Output the weight plotting
 fig, ax = plt.subplots()
 plotting.plot_weights(weights_plot)
-plt.savefig('/home/qian/Documents/cbus_case_study/Resources/Images/weights_unconstrained.png')
+plt.savefig('/home/qian/Documents/cbus_case_study/Resources/Images/weights_constrained.png')
 
 #Calculate and display the portfolio performance
 ef_plot.portfolio_performance(verbose=True)
 
 # Create a new EfficientFrontier instance for adding consrtaints
-ef_constraints = EfficientFrontier(expected_returns=mu, cov_matrix=cov_matrix, weight_bounds=(0, 1))
+ef_constraints = EfficientFrontier(expected_returns=mu, cov_matrix=cov_matrix, weight_bounds=(-1, 1))
 ef_constraints.add_constraint(lambda x: cvxpy.sum(x) == 1)
 
 fig, ax = plt.subplots()
@@ -64,4 +61,4 @@ ax.scatter(ef_plot.portfolio_performance()[1], ef_plot.portfolio_performance()[0
 ax.legend()
 
 # Save the graph into the Resources folder
-plt.savefig('/home/qian/Documents/cbus_case_study/Resources/Images/efficient_frontier_unconstrained.png')
+plt.savefig('/home/qian/Documents/cbus_case_study/Resources/Images/efficient_frontier_constrained.png')
