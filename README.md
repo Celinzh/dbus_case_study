@@ -1,23 +1,21 @@
 # Dbus Case Study 🚎
 
-[![Slides](cbus_case_study/Resources/Images/Pictures/ppt_cover.png)](https://www.canva.com/design/DAF2omzYPZ0/7We1rvkrmcWJcc1cug6byw/edit?utm_content=DAF2omzYPZ0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+[![Slides](/Resources/Images/Pictures/ppt_cover.png)](https://www.canva.com/design/DAF2omzYPZ0/7We1rvkrmcWJcc1cug6byw/edit?utm_content=DAF2omzYPZ0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 ## Project Overview
-![Dbus](cbus_case_study/Resources/Images/Pictures/DBUS.webp)
+![Dbus](/Resources/Images/Pictures/DBUS.webp)
 
 Dbus Super Fund has identified 24 stocks in which it wants to invest. This case study aims to analyze historical data to construct various mean-variance optimal portfolios with suitable constraints
 
 ## Executive Summary
-![Image_1](/cbus_case_study/Resources/Images/weights_unconstrained.png)
-![Image_2](/home/qian/Documents/cbus_case_study/Resources/Images/weights_sector_constrained_10%cap.png)
+![Image_1](/Resources/Images/weights_unconstrained.png)
+![Image_2](/Resources/Images/weights_sector_constrained_10%cap.png)
 
-![Image_1](/cbus_case_study/Resources/Images/efficient_frontier_unconstrained.png)
-![Image_2](/cbus_case_study/Resources/Images/efficient_frontier_constrained.png)
+![Image_1](/Resources/Images/efficient_frontier_unconstrained.png)
+![Image_2](/Resources/Images/efficient_frontier_constrained.png)
 
 ## Logistic
 The project logistics can be divided into two main parts:
-1. Data Collection
-2. Portfolio Constructions
 
 1. Data Collection
 The project utilized the Yahoo Finance API to extract weekly prices of the 24 stocks over the past three years. Adjusted close prices were calculated to derive weekly historical returns. Data quality was assessed, and outliers were capped at the 90th percentile.
@@ -45,6 +43,7 @@ To further explain the sectors allocation, the world is currently experiencing p
 
 
 Reference
+
 Analytics Vidhya. (2021, May 5). Detecting and Treating Outliers: Treating the Odd One Out. Analytics Vidhya. https://www.analyticsvidhya.com/blog/2021/05/detecting-and-treating-outliers-treating-the-odd-one-out/
 
 Ledoit, O., & Wolf, M. (2003). Honey, I Shrunk the Sample Covariance Matrix The Journal of Portfolio Management, 30(4), 110–119. https://doi.org/10.3905/jpm.2004.110
