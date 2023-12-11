@@ -1,18 +1,18 @@
 # Dbus Case Study 🚎
 
-[![Slides](Images/slides.png)](https://www.canva.com/design/DAF2omzYPZ0/7We1rvkrmcWJcc1cug6byw/edit?utm_content=DAF2omzYPZ0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+[![Slides](cbus_case_study/Resources/Images/Pictures/ppt_cover.png)](https://www.canva.com/design/DAF2omzYPZ0/7We1rvkrmcWJcc1cug6byw/edit?utm_content=DAF2omzYPZ0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 ## Project Overview
-![Dbus](/home/qian/Documents/cbus_case_study/Resources/Images/DBUS.webp)
+![Dbus](cbus_case_study/Resources/Images/Pictures/DBUS.webp)
 
 Dbus Super Fund has identified 24 stocks in which it wants to invest. This case study aims to analyze historical data to construct various mean-variance optimal portfolios with suitable constraints
 
 ## Executive Summary
-![Image_1](/home/qian/Documents/cbus_case_study/Resources/Images/weights_unconstrained.png)
+![Image_1](/cbus_case_study/Resources/Images/weights_unconstrained.png)
 ![Image_2](/home/qian/Documents/cbus_case_study/Resources/Images/weights_sector_constrained_10%cap.png)
 
-![Image_1](/home/qian/Documents/cbus_case_study/Resources/Images/efficient_frontier_unconstrained.png)
-![Image_2](/home/qian/Documents/cbus_case_study/Resources/Images/efficient_frontier_constrained.png)
+![Image_1](/cbus_case_study/Resources/Images/efficient_frontier_unconstrained.png)
+![Image_2](/cbus_case_study/Resources/Images/efficient_frontier_constrained.png)
 
 ## Logistic
 The project logistics can be divided into two main parts:
