@@ -12,7 +12,7 @@ Dbus Super Fund has identified 24 stocks in which it wants to invest. This case 
 ![Image_2](/Resources/Images/weights_sector_constrained_10%cap.png)
 
 ![Image_1](/Resources/Images/efficient_frontier_unconstrained.png)
-![Image_2](/Resources/Images/efficient_frontier_constrained.png)
+![Image_2](/Resources/Images/efficient_frontier_sectors.png)
 
 ## Logistic
 The project logistics can be divided into two main parts:
