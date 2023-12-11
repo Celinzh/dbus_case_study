@@ -14,7 +14,7 @@ This case study explores the opportunity to integrate macroeconomics into a quan
 
 The red star represents the tangency portfolio, which has the highest Sharpe ratio when there are no constraints in the long-only mean-variance portfolio. In this portfolio, only 6 out of the 24 stocks and 4 out of 5 sectors are invested. Therefore, the second portfolio aims to invest in more diversified sectors and include more stocks to mitigate individual stock risks.
 
-![Image_2](/Resources/Images/weights_sector_constrained_2.png)
+![Image_2](/Resources/Images/weights_sector_constrained_1.png)
 ![Image_2](/Resources/Images/efficient_frontier_sectors_1.png)
 
 The green star represents the optimal portfolio when sector constraints are applied. Please find the details of these constraints in the logistic section.
