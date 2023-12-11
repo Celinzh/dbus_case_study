@@ -80,7 +80,7 @@ fig, ax = plt.subplots()
 pplt.plot_efficient_frontier(ef_plot, ax=ax, show_assets=False)
 
 # Starsign the Tangency Portfolio on the graph
-ax.scatter(optimal_portfolio[1], optimal_portfolio[0], marker='*', color='g', s=200,label='Constrained Tangency Portfolio')
+ax.scatter(optimal_portfolio[1], optimal_portfolio[0], marker='*', color='g', s=200,label='Constrained Optimal Portfolio')
 ax.legend()
 
 # Plot the more advanced efficient frontier graph

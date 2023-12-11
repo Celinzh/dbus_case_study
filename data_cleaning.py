@@ -100,11 +100,15 @@ print(percentage_df.to_frame(name='Percentage'))
 
 # 2) Is volatility constant?
 vols = stock_returns_converted.rolling(50).std().dropna()
-print(vols.index)
+vols.reset_index()
 
 # Adjust the details of the graph
 plt.figure(figsize=(15,6))
-vols.plot(x='Date', legend=True)
+vols.plot(legend=True)
 plt.legend(vols.columns, loc='upper center', bbox_to_anchor=(1, 1))
 plt.title('Rolling STD of Multiple Columns')
-plt.savefig('/home/qian/Documents/cbus_case_study/Resources/Images/vol_check_1.png', bbox_inches='tight')
+plt.savefig('/home/qian/Documents/cbus_case_study/Resources/Images/vol_check.png', bbox_inches='tight')
+
+# 3) Visualise the data using the hist() method
+stock_returns_converted.hist(bins=100)
+plt.savefig('/home/qian/Documents/cbus_case_study/Resources/Images/histogram.png', bbox_inches='tight')
