@@ -51,4 +51,10 @@ However, the world is changing quickly now, and the current balance may not be s
 
 Analytics Vidhya. (2021, May 5). Detecting and Treating Outliers: Treating the Odd One Out. Analytics Vidhya. https://www.analyticsvidhya.com/blog/2021/05/detecting-and-treating-outliers-treating-the-odd-one-out/
 
+Besser, N. (2022, March 3). Python for Finance: Portfolio Optimization and the Value of Diversifying. Medium. https://nicobesser.medium.com/python-for-finance-portfolio-optimization-and-the-value-of-diversifying-99ef8e5cfbdc
+
+Doeswijk, R., & Van Vliet, P. (2011). Global tactical sector allocation: A quantitative approach. The Journal of Portfolio Management, 38(1), 29-47.
+
+Francis, J. C., & Kim, D. (2013). Modern portfolio theory: Foundations, analysis, and new developments. John Wiley & Sons.
+
 Ledoit, O., & Wolf, M. (2003). Honey, I Shrunk the Sample Covariance Matrix The Journal of Portfolio Management, 30(4), 110–119. https://doi.org/10.3905/jpm.2004.110
