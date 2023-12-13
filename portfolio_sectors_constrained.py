@@ -38,7 +38,7 @@ sector_df = sector_df[['Stock ID', 'Sector']]
 sector_dict = sector_df.set_index('Stock ID')['Sector'].to_dict()
 
 # Set sectors constrains
-sector_lower = {'Financials': 0, 'Consumer Goods': 0.25, 'Energy': 0.1, 'Industrials': 0.25, 'Healthcare': 0}  # at least 10% to tech
+sector_lower = {'Financials': 0, 'Consumer Goods': 0.25, 'Energy': 0.1, 'Industrials': 0.25, 'Healthcare': 0}  
 sector_upper = {'Financials': 0.10, 'Consumer Goods': 0.50, 'Energy': 0.30, 'Industrials': 0.50, 'Healthcare': 0.20}
 
 # Create an EfficientFrontier instance and set sector constrains
